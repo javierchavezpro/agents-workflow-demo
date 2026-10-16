@@ -1,13 +1,17 @@
-# Embit: maintaining a design system with agents
+# Working with agents in Figma: a reduced workflow and an Embit case
 
 I am Javier, a Product Designer and the creator of Embit. This sample shows how I directed agents during selected design-system maintenance work on 13–15 October 2026. A button-contrast change provides a short introduction to the selected work record.
 
 I defined the scope and approved the contextual colour decision. Agents inspected the components, applied the approved change, checked instances and recorded the results. A DS Manager Deputy coordinated the work and corrected a test that was checking the wrong behaviour. [E02](#e02-decision-and-scope), [E04](#e04-application-and-readback), [E06](#e06-a-test-that-needed-correction).
 
-There are two ways to read this sample:
+There are four ways to read this sample:
 
 - [The short case](#short-case) explains the problem, decision and result.
 - [The selected work record](#selected-work-record) is the main evidence route. It follows the work, including the test failure and its correction. The [evidence index](#evidence-index) identifies what supports each claim.
+- [The reduced agents-workflow folder](agents-workflow/AGENTS.md) contains selected copies of four role guides, three skills and the supporting rules. Start with [one Figma request](agents-workflow/REQUEST.md) and follow [its route through the roles](agents-workflow/WORKFLOW.md).
+- [The work session](work-sessions/Una%20muestra%20del%20trabajo%20con%20agentes%20para%20Clara%202026-10-16.en.md) follows the need behind this sample, the decisions and handoffs, the first public GitHub delivery and Career Manager's receipt. Its historical cutoff is 15 October 2026. The source was approved on 16 October. Self-contained presentations are also available to download and open locally in [English](work-sessions/Una%20muestra%20del%20trabajo%20con%20agentes%20para%20Clara%202026-10-16.en.html) and [Spanish](work-sessions/Una%20muestra%20del%20trabajo%20con%20agentes%20para%20Clara%202026-10-16.html).
+
+The folder preserves the structure of my working system. Its source instructions remain in Spanish; the orientation is in English. Live mailboxes, their implementation, private decision records, unrelated roles and full project logs are omitted. It is a reading sample, with declared dependencies, rather than a complete system distribution. The example request explains the route; it is not presented as a recovered historical prompt or as evidence that every role executed the CTA change.
 
 The period is 13–15 October 2026, Mexico City time. The central change was made on 15 October. The previous changelog and a separate Label repair provide context. This is a selection, not a complete account of those three days. The documentary cut includes the 15 October entry for changelog 7.8.0. [E01](#e01-period-and-previous-cut), [E08](#e08-documentation-after-the-change).
 
