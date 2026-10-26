@@ -16,7 +16,7 @@ This is a routing example, not a requirement that four agents approve every chan
 
 ## Compare the map with the real record
 
-The [selected work record](Projects/Embit%20DS/Embit/WORKLOG.md) and [case evidence](../README.md#evidence-index) show what actually happened: a contextual colour decision, an approved change, instance checks, a mistaken test criterion and its correction. The preparation of the public Figma sample added technical and editorial review, manual transfer by Javier, a dependency check and an explicit receipt by Career Manager.
+The [selected work record](Projects/Embit%20DS/Embit/WORKLOG.md) and [case evidence](../EMBIT_CASE.md#evidence-index) show what actually happened: a contextual colour decision, an approved change, instance checks, a mistaken test criterion and its correction. The preparation of the public Figma sample added technical and editorial review, manual transfer by Javier, a dependency check and an explicit receipt by Career Manager.
 
 ## Read the actual skills
 

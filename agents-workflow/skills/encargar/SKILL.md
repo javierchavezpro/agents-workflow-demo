@@ -3,14 +3,13 @@ name: encargar
 description: Prompt completo y esfuerzo recomendado para encargar trabajo a un worker o a un delegado. Úsala cuando un plan reparta trabajo a otra conversación o Javier pida «el prompt para el worker».
 ---
 
-> Derived reading copy, 15 October 2026. Source: `skills/encargar/SKILL.md`. Closing example/test history omitted. External canons and tool integrations are intentionally incomplete. This copy is for reviewing the workflow and is not an installed or self-contained skill.
-
+> Reading copy generated on 2026-10-26 (demo 2026.10) from `skills/encargar/SKILL.md`: complete except its example. The instructions are the original Spanish ones. Links to files outside this copy are shown as paths in code. See `PROVENANCE.md` at the root of this folder.
 
 # Encargar a un worker
 
 > **Skill de tarea.** Es la forma que toma la regla 16 de `Javier/WORKING_WITH_JAVIER.md`: todo encargo a un worker se entrega con su prompt completo y su esfuerzo recomendado. La regla dice qué se exige; esta plantilla dice cómo se ve. No copia ningún canon: donde hay una regla, la cita. Todas las rutas son desde la raíz del repositorio.
 > **Dueño:** el Super Agent Admin. Nace el 2026-09-28 por decisión de Javier, sobre la práctica que el DS Manager asentó el 2026-09-26 en `Design/DS Manager/DS_MANAGER.md` («Reglas de operación»). **Estado: en uso.**
-> **Actualizado de la fuente: 2026-10-12.** La metadata administrativa del mantenimiento se omitió de esta copia.
+> **Actualizado en la fuente: 2026-10-12.**
 
 ## Por qué existe
 
@@ -67,5 +66,3 @@ Es lo mismo que te tienen que dar a ti antes de un trabajo (ver «Lo que te tien
 - **Dejar la entrega para el final.** Si el trabajo se corta, no queda nada, y el siguiente tiene que reconstruir lo hecho leyendo el resultado.
 - **Olvidar dónde se entrega.** Un worker que no sabe dónde escribir escribe donde puede, o entrega en su chat, que Javier va a borrar.
 - **Copiar reglas en el prompt.** Apunta a la guía; si la regla cambia, el prompt copiado queda viejo.
-
-

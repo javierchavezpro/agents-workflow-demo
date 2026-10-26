@@ -3,13 +3,12 @@ name: construir-componente
 description: "Crea o amplía un componente de un design system en Figma: identidad, anatomía, API, tokens, estados y pruebas. Úsala para construir masters; no para auditar pantallas ni publicar."
 ---
 
-> Derived reading copy, 15 October 2026. Source: `skills/construir-componente/SKILL.md`. Recipe body preserved. External canons and tool integrations are intentionally incomplete. This copy is for reviewing the workflow and is not an installed or self-contained skill.
-
+> Reading copy generated on 2026-10-26 (demo 2026.10) from `skills/construir-componente/SKILL.md`: complete. The instructions are the original Spanish ones. Links to files outside this copy are shown as paths in code. See `PROVENANCE.md` at the root of this folder.
 
 # Construir o ampliar un componente del DS
 
 > **Fuente canónica de la receta.** Dueño del método: DS Manager; Naming Architect y File Architect conservan sus cánones. Alta técnica y adaptadores: Super Agent Admin.
-> **Alcance:** cualquier proyecto y design system identificados en el encargo; base y derivado solo cuando existan. **Actualizado: 2026-10-09.**
+> **Alcance:** cualquier proyecto y design system identificados en el encargo; base y derivado solo cuando existan. **Actualizado en la fuente: 2026-10-09.**
 
 ## Cuándo usarla
 
@@ -41,4 +40,3 @@ Cánones que se consultan según el paso:
 8. **Construye estados y variantes.** Clona desde una cara sana y compara cada clon con el origen para restaurar propiedades o enlaces perdidos. Comprueba foco, disabled, contenido largo y reacciones cuando el DS los prometa.
 9. **Prueba en instancias.** Alterna API, slots, tallas, estados y modos; redimensiona instancias y compara árbol y captura tras la última escritura. Comprueba el aspecto resuelto de tipografía, rellenos, trazos, color y efectos o sombras en cada modo y estado pertinente, no solo sus bindings. Naming contrasta nombre público, capas por responsabilidad, ejes, valores, booleanos, textos, swaps y slots con `Design/Figma/NAMING_STRUCTURE_GUIDE.md` §§4–6; no certifica tokens, comportamiento ni publicación. Si el encargo pide documentación en Figma, aplica el criterio de presentación de File Architect aunque la página ya estuviera decidida; la documentación visual no nace automáticamente.
 10. **Documenta y entrega.** El acomodo del set en su página, su margen interior y su playground siguen `Design/Figma/PRESENTATION_GUIDE.md` §7. Actualiza ficha y worklog; índice solo si cambió lo que indexa, contrato si nació una regla y línea de réplica si corresponde. Informa evidencia, límites, decisiones abiertas y estado de publicación. La skill no publica por sí sola.
-

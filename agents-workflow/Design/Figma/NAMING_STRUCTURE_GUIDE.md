@@ -1,6 +1,23 @@
-> Reading copy, 15 October 2026. Source: `Design/Figma/NAMING_STRUCTURE_GUIDE.md`. Selected sections only; live backlogs, occupants and history omitted. Original Spanish instructions retained. Referenced canons outside this selection are dependencies, not bundled files; see PROVENANCE.md. This is documentation, not an operational checkout.
+> Reading copy generated on 2026-10-26 (demo 2026.10) from `Design/Figma/NAMING_STRUCTURE_GUIDE.md`: selected sections; who holds the role, backlogs and history are omitted. The instructions are the original Spanish ones. Links to files outside this copy are shown as paths in code. See `PROVENANCE.md` at the root of this folder.
 
 # Nomenclatura y estructura de frames: guía de generación (agentes)
+
+> Reglas operativas para **nombrar la estructura** que se genera en Figma: pantallas de prototipo, frames internos, componentes y secuencias de animación. Se lee antes de generar o renombrar, junto con la recepción del proyecto en que trabajes (en Embit, `../../Projects/Embit DS/AGENTS.md`), sus reglas de diseño locales (en Embit, `../Design Systems/Embit/Governance/EMBIT_DESIGN_GUIDES.md`: tokens y retícula) y `SCREEN_STRUCTURE_GUIDE_GENERAL.md` (método y anatomía, en esta carpeta).
+> **Alcance:** canon transversal, aplica a cualquier proyecto del sistema que se diseñe en Figma. Casos vivos hoy: [cliente 2] Prototipo, Mobile App, Embit DS y sus derivados. La contraparte explicada para diseñadores es `../../Projects/Embit DS/Documentación/NAMING_ANIMATION_HANDBOOK.md`.
+> **Lo administra el oficio Naming Architect** (`../Naming Architect/NAMING_ARCHITECT.md`).
+> **Frontera del oficio:** esta guía documenta la GRAMÁTICA de los nombres. El Screen Designer decide qué nodos existen, cómo se anidan y cómo se comportan; Naming decide cómo se llaman los nodos ya justificados. El mapa de páginas (cuáles existen, en qué orden, con qué fronteras) es del oficio **Arquitectura del archivo** (`FILE_ARCHITECTURE_GUIDE.md`, en esta carpeta) y esta guía no crece hacia él. La simbología de secciones vive aquí: quien la necesite la consume, no crea otra. **Matiz acordado con Javier (2026-08-05, anotado por el File Architect y ratificado por el Naming Architect el mismo día):** en archivos de DS, **qué familias de página existen** es decisión del oficio Arquitectura del archivo y **cuál símbolo lleva cada una** es gramática de aquí; el resultado se registra en el contrato del DS (caso resuelto: `EMBIT_DS_CONTRACT` §10b, con `📄 ↪ ❖ 📦` y el separador de familia).
+> **Actualizado en la fuente: 2026-10-09.**
+
+## 1. Las dos capas de idioma
+
+**Capa de producto, en español** (o el idioma del cliente): páginas del archivo, secciones de Figma y el nombre del frame de pantalla. Es la capa que ven stakeholders y devs al navegar el archivo, y debe hablar su idioma.
+
+**Capa de construcción, en inglés, siempre**: todo lo interno al frame de pantalla (regiones, frames, textos, componentes y sus piezas). Le compete a diseño, desarrollo y agentes.
+
+Matices de la capa de producto:
+
+- **Nombre propio en inglés se respeta.** Si un módulo o función tiene nombre propio que no se adapta al español (Contextual Web View, Talent AI), la sección o pantalla lo conserva tal cual.
+- **Documentación del cliente manda.** Si un flujo está atado a un doc externo (criterios de aceptación, sistema de keys, idioma exigido por el cliente), el nombre adopta el formato de ese doc. Casos vigentes: pantallas `Módulo: AC-XX - Descripción` amarradas a criterios de aceptación, y las raíces de las secuencias de animación de [cliente 1] en español, por cliente.
 
 ## 6. Componentes
 
@@ -44,4 +61,3 @@ Además de las metas que declare el DS del proyecto en turno (`../Design Systems
 ---
 
 *Establecido por Javier (2026-08-04 y 2026-08-24, conversaciones de auditoría y redefinición de nomenclatura). Cambios a esta guía: decisión de Javier.*
-

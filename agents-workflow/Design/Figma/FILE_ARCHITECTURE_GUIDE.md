@@ -1,8 +1,13 @@
-> Reading copy, 15 October 2026. Source: `Design/Figma/FILE_ARCHITECTURE_GUIDE.md`. Selected sections only; live backlogs, occupants and history omitted. Original Spanish instructions retained. Referenced canons outside this selection are dependencies, not bundled files; see PROVENANCE.md. This is documentation, not an operational checkout.
+> Reading copy generated on 2026-10-26 (demo 2026.10) from `Design/Figma/FILE_ARCHITECTURE_GUIDE.md`: selected sections; who holds the role, backlogs and history are omitted. The instructions are the original Spanish ones. Links to files outside this copy are shown as paths in code. See `PROVENANCE.md` at the root of this folder.
 
 # Arquitectura del archivo: el canon
 
-> El oficio se llama **Arquitectura del archivo** (decisión de Javier, 2026-08-04). Redacción con IA (Fable). **Actualizado: 2026-10-09.**
+> Esta guía da **estructura y presentación** a los archivos de Figma del ecosistema: el mapa de páginas, las páginas de documentación, los muestrarios y las plantillas de anatomía. Trabaja el nivel macro del archivo, el que hace que se navegue, se entienda y se consulte.
+> Se lee junto a `../../Javier/WORKING_WITH_JAVIER.md` (flujo y alcance), `../Design Systems/FILE_ARCHITECTURE.md` (las decisiones que todo archivo debe responder, y los cuatro invariantes que no se negocian) y el contrato del DS en turno, donde viven las respuestas del caso (vivo: `../Design Systems/Embit/Contract/EMBIT_DS_CONTRACT.md` §10b).
+> **Esta guía no repite invariantes ni reglas del patrón: los consume.** Si una regla general aparece aquí duplicada, sobra aquí.
+> **Lo administra el oficio File Architect** (`../File Architect/FILE_ARCHITECT.md`).
+> **Frontera del oficio:** los NOMBRES de páginas y frames de documentación son del canon Naming (`NAMING_STRUCTURE_GUIDE.md` §6b), que este oficio consume y no define; y el contenido de diseño de las pantallas no es suyo, sino de los oficios de pantallas y reglas de aplicación.
+> El oficio se llama **Arquitectura del archivo** (decisión de Javier, 2026-08-04). Redacción con IA (Fable). **Actualizado en la fuente: 2026-10-23.**
 
 ## 3. Método de trabajo
 
@@ -27,4 +32,3 @@ Documentar obliga a medir, y medir destapa defectos: una altura que en realidad 
 El corolario importa más que la regla: **nunca se documenta la intención.** Si el componente se comporta distinto de lo que dice el contrato, la página de documentación describe el comportamiento, marca la diferencia y deja el hallazgo anotado. Una documentación que describe el estado deseado convierte un defecto en una mentira con formato de spec, y el siguiente que la lea diseñará contra ella.
 
 El límite inverso también es del oficio: si para documentar hace falta **construir** algo (un componente de documentación, un espécimen, una plantilla), eso sí es suyo (§1), porque no es parte del sistema que se documenta.
-

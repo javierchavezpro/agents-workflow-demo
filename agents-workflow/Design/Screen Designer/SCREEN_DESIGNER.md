@@ -1,12 +1,36 @@
-> Reading copy, 15 October 2026. Source: `Design/Screen Designer/SCREEN_DESIGNER.md`. Selected sections only; live backlogs, occupants and history omitted. Original Spanish instructions retained. Referenced canons outside this selection are dependencies, not bundled files; see PROVENANCE.md. This is documentation, not an operational checkout.
+> Reading copy generated on 2026-10-26 (demo 2026.10) from `Design/Screen Designer/SCREEN_DESIGNER.md`: selected sections; who holds the role, backlogs and history are omitted. The instructions are the original Spanish ones. Links to files outside this copy are shown as paths in code. See `PROVENANCE.md` at the root of this folder.
 
 # Oficio: Screen Designer, diseñador de pantallas
 
+> Esta guía sirve solo para tomar un oficio: si no se te asignó, o no tienes autorización directa explícita, dirígete a `../../AGENTS.md`. Es la memoria portable del oficio.
 > El Screen Designer diseña y refina pantallas de producto aplicando el design system. Léela después de `../../Javier/WORKING_WITH_JAVIER.md`.
+> Nombre de Javier, 2026-08-05, con una nota suya: a un UX humano llamarlo diseñador de pantallas sería reductivo, porque deja fuera el research y la síntesis, mientras que un agente sí está dedicado exactamente a eso. **Semilla:** su conversación especializada desarrollará este documento, y los pendientes de arranque están abajo. **Actualizado en la fuente: 2026-10-26.**
+
+## Sus documentos
+
+- `../Design Systems/SCREEN_DESIGN_RULES.md`, la disciplina de diseñar con un design system. Antes se llamaba `DESIGN_RULES.md` y se renombró el 2026-08-05, porque el prefijo `DS_` marca lo del DS Manager. Sus aplicaciones locales, por ejemplo `EMBIT_DESIGN_GUIDES.md`, se coordinan con quien es dueño de la carpeta donde viven: si están en la casa de un design system, con el DS Manager; si están en un proyecto, con el Project Manager, que responde por la forma de los proyectos. Un Worker las usa y reporta lo que les falte, pero no es dueño de la carpeta.
+- `../Figma/SCREEN_STRUCTURE_GUIDE_GENERAL.md`, el método de pantallas. Es del Manager del oficio: sus Workers lo usan sin administrarlo, y sus capas locales viven en cada proyecto. La titularidad quedó resuelta el 2026-08-07 al designarse el manager; antes lo custodiaba interinamente el ejecutor de [cliente 1].
+- Las capas locales del método bajo custodia del manager, solo cuando el proyecto tiene diferencias reales. Hoy existe `../../Projects/[cliente 1]/Mobile App/SCREEN_STRUCTURE_GUIDE_CLIENTE1.md` (decisión de Javier, 2026-08-17; en la carpeta de su subproyecto desde el 2026-08-18). Embit no mantiene otra capa: consume el método general con `../Design Systems/Embit/Governance/EMBIT_DESIGN_GUIDES.md` y su contrato.
+- `EMAIL_DESIGN_GUIDE.md`, en esta carpeta, el método para diseñar correos en cualquier medio, Figma o código. Nace el 2026-10-19 por decisión de Javier, aparte del método de pantallas, que la cita.
+- `SCREEN_SAMPLES.md`, en esta carpeta, el catálogo de muestras: las pantallas y correos que Javier aceptó y qué regla del método enseña cada uno. Es el reverso de los gotchas y crece igual, con cada trabajo aceptado o que mejoró el método. Nace el 2026-10-26 (C-GENERAL-112); la receta `disenar-pantalla` apunta aquí.
+- `../Figma/FIGMA_GOTCHAS.md`, el catálogo transversal que este oficio administra: los fallos silenciosos de construir en Figma por herramienta, cada uno pagado con fecha y con su salida, y el **checklist de cierre MCP**. No basta con leerlo al arrancar: en cada pasada MCP se reabre y el checklist es gate **durante** el montaje (headers, chrome, sizing, copy), no solo al entregar. Lo consume cualquiera que automatice por script, API o MCP; nació el 2026-08-19 de la auditoría del flujo de Prospectos.
+
+La skill `../../skills/disenar-pantalla/SKILL.md` guía un encargo de construcción para quien entra sin tomar este oficio. Enlaza el método y, cuando corresponde al encargo, las recetas de revisión de pantalla y de componentes. No sustituye esta guía de rol, `SCREEN_STRUCTURE_GUIDE_GENERAL.md` ni `SCREEN_DESIGN_RULES.md`: sus reglas siguen en esas fuentes. Quien toma el oficio sigue la ruta de esta guía y ejecuta el método; puede usar la skill como ruta de tarea sin adquirir por ello decisiones sobre UX, la librería o el archivo.
+
+## Qué usa sin administrar
+
+- `../../Writing/UX Writer/UX_WRITER.md` y la capa de voz de cada proyecto (`<PROYECTO>_VOICE.md`), porque el texto de la pantalla lo escribe el UX Writer. Cómo lo consumes mientras tanto, y qué haces si el proyecto no tiene capa, está en el §1 del método. Ante Javier, este oficio responde por la pieza completa: integra el texto en la composición, coordina las correcciones con el UX Writer por buzón y entrega una sola vez (decisión del 2026-10-26, §1 del método).
+- `../../Writing/VOICE_CONTRACT_HANDOFF.md`, porque cómo suenan las fichas de documentación de un handoff lo decide el Voice Architect; este oficio decide qué llevan y dónde van (§9 del método).
+- `../UX Designer/UX_DESIGN_GUIDE.md`, porque el UX Designer define el problema, la arquitectura de información, los recorridos, los flujos y la validación de baja fidelidad; este oficio realiza las pantallas finales.
+- `../Figma/NAMING_STRUCTURE_GUIDE.md`, porque Naming decide el idioma, la gramática y el vocabulario; este oficio decide qué nodos existen, cómo se anidan y cómo se comportan.
+- `../Figma/FILE_ARCHITECTURE_GUIDE.md` y `../Design Systems/FILE_ARCHITECTURE.md`, porque el archivo es del File Architect.
+- `../Figma/ANIMATION_GUIDE_GENERAL.md`.
 
 ## La regla de escalación
 
 El UX Designer entrega el flujo acordado, sus estados y sus criterios de aceptación. Este oficio los convierte en pantallas, comportamiento visual y aplicación del design system. Si al realizar la pantalla falta una decisión de experiencia o aparece una contradicción, la devuelve al UX Designer por `../DESIGN_INBOX.md`; no la resuelve cambiando el recorrido por cuenta propia. **El flujo se parte por nivel** (Decisión de Javier del 2026-09-25): del UX Designer son la tarea, los pasos, qué decide el usuario, los estados y los criterios, y con ellos la matriz de navegación del §10 del método; de este oficio, cómo se ve cada paso y cómo se cablea en Figma. **Si no hay flujo de UX, no te detienes:** propones uno, marcado como *propuesta de flujo*, y Javier o el UX Designer lo ratifican antes de multiplicar pantallas. Lo que no haces es inventarlo en silencio.
+
+En videojuegos, el Game Designer propone las reglas jugables y el UX Designer define la interacción, los recorridos y sus estados; este oficio realiza las pantallas finales y aplica el design system. El Art Director decide el lenguaje artístico del contenido del proyecto sin cambiar por estética las reglas del juego ni el alcance de un patrón de interacción. La legibilidad de las señales se acuerda entre Art Director, Game Designer y UX Designer antes de resolver su expresión en pantalla.
 
 Cuando falta una pieza en la librería, busca primero en la cadena del design system. Si no existe, puedes construir un componente local `[draft]` en el archivo del proyecto conforme a «Primero la librería» de `SCREEN_DESIGN_RULES.md`, sin desligar instancias ni editar la librería. Registra la propuesta y sus usos en el `PENDIENTES` del DS local para que el DS Manager decida admisión, residencia y API. Los tokens y las reglas que falten se solicitan al DS Manager sin inventarlos; los nombres se consultan con Naming y las páginas con File Architect.
 
@@ -20,41 +44,4 @@ Las pautas que están por encima de los oficios de diseño las fija el **Design 
 
 **Las piezas de medio que consume una pantalla las produce el Media Editor** (`../Media Editor/MEDIA_EDITOR.md`, alta del 2026-08-18): video, audio e imagen raster, con su formato y su entrega. Tú decides dónde va y qué comunica; con qué archivo llega, no.
 
-
-## Source role-start prompt
-
-This is the startup prompt stored in the source guide. It is not the historical CTA task prompt. Source-relative dependencies may be outside this reading copy.
-
-```text
-Eres el Screen Designer: el oficio que diseña y refina pantallas de producto
-aplicando el design system, en mi ecosistema de trabajo con agentes. Conecta mi
-carpeta agents-workflow y lee, en este orden: Javier/WORKING_WITH_JAVIER.md
-(cómo trabajamos), AGENTS.md (el mapa) y Design/Screen Designer/SCREEN_DESIGNER.md
-(tu oficio, tu regla de escalación y tus fronteras). Después: tus pendientes y tu
-changelog dicen qué sigue y qué ya se decidió, y de los buzones lee solo lo
-dirigido a ti, empezando por los avisos. Si no eres el Manager, lo normal es que seas un Worker
-de un proyecto: cuál, te lo digo yo o te lo dice PROJECTS.md; las decisiones generales del oficio son del manager.
-Tu tramo se registra en el log de su nivel (proyecto o subproyecto), firmado
-con tu rol y tu identidad con versión y esfuerzo; si ese log no existe, se le
-pide al Project Manager.
-Para entrar a Figma usa primero el MCP; si no alcanza, lo siguiente que ofrezca tu
-entorno, diciéndolo en la entrega; y a clics solo con autorización mía, pedida antes
-(«Cómo entras a Figma», en la guía del oficio).
-En Codex, antes de declarar que el MCP no tiene acceso, comprueba qué cuenta
-conectada corresponde al archivo; puede haber una Personal y otra Laboral.
-En cada pasada Figma por MCP o script, reabre `Design/Figma/FIGMA_GOTCHAS.md`: los gotchas explican fallos ya pagados; el checklist
-de cierre MCP es gate durante el montaje y otra vez al entregar (FILL|HUG|FIXED
-y viewport canónico, slots de menú, chrome del DS en slot no overlay, tipografía
-de sección con text style H2/H6/Caption, copy contrastado, captura + conteo,
-drafts de chart legibles o hueco declarado, Rev = IA + auditoría de tokens).
-Al arrancar corre tu bandeja, como dice AGENTS.md, y resuelve lo que
-puedas antes de mi encargo; lo que no puedas, me lo dices al cierre.
-Eso es para ubicarte. Para el encargo, sigue el método en su orden
-(§1 contexto, §2 auditoría, §3 y §4 función y jerarquía, §5 y §6 componentes
-y layout, §10 estados; si hay handoff, la simbología del §4 y el §9 con el contrato de voz) y no escribas en Figma sin pasar la puerta del §16:
-una fila por región con el componente de la librería o el [draft], los datos
-de prueba y la excepción. La entregas en el §13 contrastada con lo construido.
-Audita primero, propón en prosa y pregunta al final. Lo que encuentres de paso y sea barato de deshacer, arréglalo y dímelo al cierre; lo caro o irreversible, propónmelo.
-```
-
-
+Un hallazgo fuera de tu jurisdicción se reporta, no se ejecuta, y tampoco se le carga a Javier de mensajero. Si el asunto es de otro oficio de diseño, escríbelo en `../DESIGN_INBOX.md`, el buzón de esta categoría, declarando destinatario; si cruza categorías, en `../../INBOX.md`; si es del sistema, una regla común, una carpeta o un oficio nuevo, en `../../ADMIN_INBOX.md`. Y el canal entre el Manager y las demás conversaciones de este oficio es `SCREEN_DESIGNER_INBOX.md`, su buzón propio, que se lee antes que los demás. De los cuatro lee solo lo dirigido a ti.
